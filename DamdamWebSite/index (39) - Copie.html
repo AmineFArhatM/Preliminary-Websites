@@ -1,0 +1,172 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebSite</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+    font-family: 'Poppins',Sans-Serif;
+    margin:0;
+    padding:0;
+}
+/*   the '*'  doesn't affect html/body in all browsers — reset them manually to remove white space */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+::selection{
+  color: white;
+  background: #1abc9c;
+}
+
+
+nav{
+
+    width:100%;
+    background-color:rgb(28,28,28);
+    color:white;
+    padding: 10px 0 ;
+    position:fixed;
+    z-index: 1;
+}
+
+.menu{
+    max-width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin:auto;
+}
+.title{
+    text-decoration: none;
+    font-size:38px;
+    color: white;
+    font-weight: 600;
+}
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left:7px;}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size:25px;
+    font-weight: 450;
+    padding:8px 5px;
+    transition:all 0.5s ease;
+    border-radius: 6px;
+}
+.menu ul li a:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+    
+}
+
+.img{
+    background-color: grey;
+    width:100%;
+    height: 100vh;
+    position: relative;  
+}
+.img::before{
+content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 500;}
+
+.btns{margin-top:20px}
+.btns button{
+    height: 55px;
+    width:140px;
+    border-radius: 8px;
+    font-size:18px;
+    font-weight: 400;
+    margin-left:8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+.btns button:first-child{
+    background: none;
+    color: white;
+    border:2px solid white;
+}
+.btns button:first-child:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease;
+    
+}
+
+    </style>
+
+  </head>
+  <body>
+      <nav>
+          <div class="menu">
+              <a class="title" href='www.a.tn'>
+                  Damdam
+              </a>
+              <ul>
+                  <li><a href='#'>About</a></li>
+                  <li><a href='#'>Home</a></li>
+                  <li><a href='#'>Services</a></li>
+                  <li><a href='#'>Contact</a></li>    
+                  <li><a href='#'>Feedback</a></li>
+              </ul>
+          </div>
+      </nav>
+      <div class="img">
+          <div class="center">
+              <div class="title">Create Amazing Website</div>
+              <div class="sub_title">Pure HTML & CSS Only</div>
+          
+          <div class="btns">
+              <button>Learn More</button>
+              <button>Subscribe</button>
+          </div>
+          </div>
+       </div>
+      
+
+
+  </body>
+</html>
