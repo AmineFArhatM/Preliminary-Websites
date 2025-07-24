@@ -1,0 +1,5 @@
+The <Section> element is used with : about us , Q/A , Pricing , contact us .... in Order to be recognised by search engines
+
+we can use justify-content : space-between 
+
+it is very convenient to add a new container every time
