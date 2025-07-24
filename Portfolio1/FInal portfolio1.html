@@ -1,0 +1,155 @@
+
+<!--In this project i learned that paddingleft or right 8%, and 
+padding-top bottom:35px is so convenient-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebSite</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body , html , body *{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins';
+  box-sizing: border-box;
+
+    
+}
+::selection{
+    color: white;
+    background-color: #1abc9c;}
+    
+a{cursor: pointer;
+}
+.outter{
+    background-image: url('https://i.ibb.co/zVnYF14S/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+    position:relative;
+    padding:35px 8%;
+
+    }
+nav{
+    padding:10px 0;
+}
+
+.menu{
+    width:100%;
+    margin:auto;
+    display:flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+}
+.part{
+    font-size:inherit;
+    color: red;
+}
+ul {display:flex;}
+ul li{margin-left:20px;}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size:16px;
+    transition:0.4s linear;
+}
+ul li a:hover{
+    color: red;
+    transition:0.4s linear;}
+
+.btns *{
+    text-decoration: none;
+    color: white;
+    font-size:16px;
+}
+.btns :first-child{
+    margin-right:7px;
+    
+}
+.btns :last-child{
+    padding:20px;
+    background-color: rgb(50,50,0);
+    border-radius:8px;
+}
+.values{
+    position:absolute;
+    margin-top:10%;
+}
+.values pre{
+    
+    font-size:60px;
+    font-weight:600;
+    color: white;
+    
+}
+.values p{
+    padding-top:20px;
+    color: white;
+    font-size:13px;
+    
+}
+
+.values button{
+    width:120px;
+    height:44px;
+    color: rgb(0,0,0);
+    background-color: white;
+    transition:0.2s linear;
+    margin-top:30px;
+    border-radius: 8px;
+    border: 2px solid white;
+    font-size:20px;
+    cursor: pointer;
+    
+    
+    
+}
+
+.values button:hover{
+    background: transparent;
+    color: white;
+    transition:0.2s linear;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav class="outter">
+         <nav>
+             <div class="menu">
+                 <div ><a href='' class="logo">Portfo<span class="part">lio.</span></a></div>
+                 <ul>
+                     <li><a href=''>Home</a></li>
+                     <li><a href=''>About</a></li>
+                     <li><a href=''>Services</a></li>
+                     <li><a href=''>Contact</a></li>
+                 </ul>
+                 <div class="btns">
+                     <a href=''>Login</a>
+                     <a href=''>Register</a>
+                 </div>
+             </div>
+         </nav>
+         <div class="values">
+             <pre>Hello,<br>It's me Damdam</pre>
+             <p>I'm Damdam , a developper , i have some special projects<br>You can find me on Github.</p>
+             <button>Hire me</button>
+         </div>
+     </nav> 
+    
+
+  </body>
+</html>
