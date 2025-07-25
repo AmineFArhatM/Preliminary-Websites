@@ -1,0 +1,185 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Development</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html,body,body *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: white;
+  background-color: aqua;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+}
+
+nav {
+  padding:7px;
+  padding-top: 20px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  width:1100px;
+  margin:0 auto;
+
+}
+nav .logo{
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left:30px;
+    font-size:18px;
+    transition:0.5s linear;
+
+}
+nav .bt{
+    color:white ;
+    font-size:18px;
+}
+nav .bt .login{
+    text-decoration: none;
+    margin-right:20px;
+    transition:0.5s linear;
+
+}
+nav .bt .signup{
+    text-decoration: none;
+    padding:12px 10px;
+    border-radius: 8px;
+    border:1px solid white;
+    transition:0.2s linear;
+
+
+}
+.bt .login:hover{
+    color:aquamarine;
+    transition:0.2s linear;
+}
+li a:hover{
+  color:aquamarine;
+  transition: 0.2s linear;
+
+}
+.bt .login :hover{
+    color:blue;
+    transition:0.2s linear;
+}
+
+.bt .signup:hover{
+  background-color:lightblue;
+  transition:0.2s linear;}
+
+.outter{
+  height:100vh;
+  width:100%;
+
+
+}
+.items{
+  width:1100px;
+  margin:100px auto;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;}
+
+.items .text{
+  width:700px;
+}
+
+.items .text h1{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.items .text p{
+  font-size:16px;
+  line-height:30px;
+  margin-top:40px;
+  opacity: 0.8;
+} .text .btns{
+  margin-top:50px;
+  font-weight: bold;
+
+}
+ .text .btns .join{
+  text-decoration: none;
+  padding:11px 20px;
+  background-color: blueviolet;
+  font-size:16px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.learn{
+  text-decoration: none;
+  border:1px solid white;
+  padding:12px 17px;
+  background: none;
+  transition: 0.3s linear;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.learn:hover{
+  transition: 0.2s linear;
+  background-color: blueviolet;
+
+}
+.tems .img{
+  width:400px;
+  height: auto;
+}
+  </style>
+</head>
+<body>
+  
+    <nav >
+        <a href="" class="logo">Damdam</a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+        <div class="bt">
+            <a class="login" href="">Login</a>
+            <a class="signup" href="">Signup</a>
+        </div>
+    </nav>
+        <div class="items">
+            <div class="text">
+                <h1>Mobile App Development</h1>
+                <p>Join us in the exciting world of programming and turn your ideas into reality. Unlock the world of endless possibilities - learn to code and shape the digital future with us.</p>
+                <div class="btns">
+                  <a class="join" href="">Join Us</a>
+                  <a class="learn" href="'">Learn More</a>
+                </div> 
+            </div>              
+            <img alr="Image" src="https://i.ibb.co/7t1sd0C6/hero-bg.png">
+
+        </div>
+</body>
+</html>
