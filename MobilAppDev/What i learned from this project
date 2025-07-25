@@ -1,0 +1,29 @@
+Here is what i learned from this Web Page project
+
+
+when using linear-gradient, better set the body height to 100vh and width to 100%
+why? because the body is not the root element (<html> is the root element) so its height and width , in some cases may not be set to 100%, which 
+can cause a bad linear-gradient
+
+
+Better use <nav> inside a <header>.
+
+
+wrap the content (image , h1 , h2 , text , buttons..) inside a section
+
+
+
+Some convenient font-sizes:
+    logo:28px
+    menu a:16px
+    login/signup:16px
+    big title content(title in center):40px
+
+some Convenient Paddings:
+    navbar:20px 15px
+    a buttons:10px 20ox / 12px 24px
+
+Some convenient margins:
+    between a menu:35px
+    between buttons:15px..30px
+    
