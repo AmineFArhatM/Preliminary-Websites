@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+footer{
+    background-color: rgb(36,36,47);
+    width:100%;
+    padding:70px 5px;
+}
+.container{
+    margin:0 auto;
+    padding:10 5px;
+    width:1250px;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    gap:10px;
+    width:300px;
+}
+.box h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:35px;
+    position:relative;
+    color: white;
+}
+.box a{
+    text-decoration: none;
+	color: #bbbbbb;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+.box h1::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.social-links a{
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.2);
+    color:white;
+    display:inline-block;
+    height: 40px;
+    width:40px;
+    text-align:center;
+    margin-right: 10px;
+    line-height: 40px;
+    transition:0.2s linear
+    
+
+}
+.box > a:hover{
+    padding-left: 10px;
+    color:white;
+    transition:0.2s linear;
+}
+
+.box .social-links a:hover {
+    background-color: #ffffff;
+    color:rgb(36,36,47)
+}
+  </style>
+</head>
+<body>
+    <footer>
+      <div class="container">
+        <div class="box">
+          <h1>Company</h1>
+          <a href="">About US</a>
+          <a href="">Our services</a>
+          <a href="">Privacy policy</a>
+          <a href="">Affiliate program</a>
+        </div>
+
+        <div class="box">
+          <h1>Get help</h1>
+          <a href="">FAQ</a>
+          <a href="">Shippings</a>
+          <a href="">returns</a>
+          <a href="">Order status</a>
+          <a href=''>Payment options</a>
+        </div>
+
+        <div class="box">
+          <h1>Online shop</h1>
+          <a href="">Watch</a>
+          <a href="">Bag</a>
+          <a href="">Shoed</a>
+          <a href="">Dress</a>
+        </div>
+
+        <div class="box">
+          <h1>Follow Us</h1>
+          <div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+          </div>
+        </div>
+
+      </div> 
+
+    </footer>
+  
+</body>
+</html>
