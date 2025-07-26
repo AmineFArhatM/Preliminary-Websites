@@ -1,0 +1,34 @@
+Simple hover skill:
+    :hover{padding-left:8px and change color
+
+
+divide footer columns by percentage ; like ; 4 col , width:25%
+
+do not set *{color :white} it may cause problems with priority
+
+text-transform: capitalize; use this property , because when u capitalise a word by yourself , like Amine, it may not work in some cases or on some browsers
+
+p,h1 are block level elements , meanwhile <a> is an inline level element 
+
+when using icons , if you want them to play links :
+    set a display to block
+    border-radius:50%
+    height: 40px
+  	width: 40px
+  	text-align: center
+  	line-height: 40px
+
+      
+some convenient font-size:
+    footer titles:18px
+    footer menu <a>:16px
+
+some convenient paddings:
+    footer top bottm: 70px
+
+some convenients margin:
+    margin between menu elements:10px
+    margin between footer titles and menu:35px
+
+
+  
