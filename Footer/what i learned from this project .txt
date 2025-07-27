@@ -18,6 +18,7 @@ when using icons , if you want them to play links :
   	text-align: center
   	line-height: 40px
 
+Better wrap the menu elements inside an ul for semantic reasons 
       
 some convenient font-size:
     footer titles:18px
