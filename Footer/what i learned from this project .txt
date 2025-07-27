@@ -18,6 +18,13 @@ when using icons , if you want them to play links :
   	text-align: center
   	line-height: 40px
 
+how to underlune a title ?
+    title::before{
+left:0
+bottom:-10px
+position:absolute
+width:50px
+
 Better wrap the menu elements inside an ul for semantic reasons 
       
 some convenient font-size:
