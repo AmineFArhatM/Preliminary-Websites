@@ -1,0 +1,124 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+::selection{
+    background-color: tomato;
+    color: black;
+}
+
+body{
+    background-color: rgb(27,27,27);
+}
+header{
+    position:fixed;
+    width:100%;
+    padding:20px;
+    text-transform: capitalize;
+    padding:0 20px;
+}
+header .headercontainer{
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(1130px,90%);
+}
+header .headercontainer .logo{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+header .headercontainer .logo span{
+    color: red;
+}
+header .headercontainer ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+ul li:not(:first-child){
+    padding-left:40px
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    transition:0.3s linear;
+}
+ul li a:hover{
+    color: orange;
+    transition: 0.3s linear;
+}
+
+section{
+    height:100vh;
+    background-image: url('https://www.codingnepalweb.com/demos/create-responsive-coffee-website-html-css/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    color: white;
+    padding:0 20px;
+}
+section .container{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+}
+.container h1{
+    font-size: 48px;
+    max-width: 600px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    color: white;
+}
+.container p{
+    font-size: 16px;
+    max-width: 600px;
+    color:white;
+    line-height:30px
+}
+.container .btn{
+    margin-top: 40px;
+
+}
+.container .btn a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    color:black;
+    background-color: white;
+    transition: 0.3s linear;
+    text-transform: capitalize;
+    border-radius: 8px;
+}
+.container .btn a:hover{
+    background-color: orange;
+    color: white;
+    transition: 0.3s linear;
+
+}
+
+
+@media (max-width: 768px) {
+    section .container h1{
+        font-size: 37px;
+        text-align: center;
+    }
+    section .container p{
+        text-align: center;
+    }
+header .headercontainer .logo{
+    font-size: 32px;
+}
+.btn{text-align: center;}
+}
