@@ -1,0 +1,5 @@
+Max-width has a higher priorith than width
+
+when settin a container position to fixed , other elemens background with 100vh will flow behind it 
+
+for responsive reasoons , set containers padding left/right to 20px
