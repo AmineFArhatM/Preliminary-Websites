@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html,body,body *{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: white;
+  background-color: aqua;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+}
+
+nav {
+  padding:5px;
+  padding-top: 20px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  width:min(1100px,90%);
+  margin:0 auto;
+
+}
+nav .logo{
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:30px
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size:18px;
+    transition:0.5s linear;
+
+}
+nav .bt{
+    color:white ;
+    font-size:16px;
+}
+nav .bt .login{
+    text-decoration: none;
+    transition:0.5s linear;
+    color: white;
+
+}
+nav .bt .signup{
+    text-decoration: none;
+    padding:12px 10px;
+    border-radius: 8px;
+    border:1px solid white;
+    transition:0.2s linear;
+    color: white;
+
+
+}
+.bt .login:hover{
+    color:aquamarine;
+    transition:0.2s linear;
+}
+li a:hover{
+  color:aquamarine;
+  transition: 0.2s linear;
+
+}
+
+.bt .signup:hover{
+  background-color:lightblue;
+  transition:0.2s linear;}
+
+
+.items{
+  width:min(90%,1100px);
+  margin:100px auto;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+color:white;}
+
+
+.items .text{
+  width:min(700px,100%);
+}
+
+.items .text h1{
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.items .text p{
+  font-size:16px;
+  line-height:30px;
+  margin-top:40px;
+  opacity: 0.8;
+} .text .btns{
+  margin-top:50px;
+  font-weight: bold;
+  color:white
+
+}
+ .text .btns .join{
+  text-decoration: none;
+  padding:11px 20px;
+  background-color: blueviolet;
+  font-size:16px;
+  border-radius: 8px;
+  margin-right: 20px;
+  color: white;
+}
+.learn{
+  text-decoration: none;
+  border:1px solid white;
+  padding:12px 17px;
+  background: none;
+  transition: 0.3s linear;
+  border-radius: 8px;
+  font-size: 16px;
+  color:white;
+}
+.learn:hover{
+  transition: 0.2s linear;
+  background-color: blueviolet;
+
+}
+.items img{
+  width:400px;
+  height: auto;
+}
+#open-b{
+
+  color: white;
+  cursor: pointer;
+  display: none;
+
+}
+
+#close-b{
+  position:absolute;
+  color:black;
+  top:10px;
+  right:10px;
+  cursor: pointer;
+}
+@media(max-width:1000px) {
+    .items img{
+        display:none;
+    }
+    .items .text h1{
+        text-align: center;
+        font-size: 28px;
+    }
+    .items .text p{
+        text-align: center;
+    
+    }
+    .items .text .btns{
+        display: flex;
+        justify-content: center;
+        gap:15px
+    }
+
+    .items .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+    nav ul{
+        padding:70px 40px 0;
+        flex-direction: column;
+        gap: 35px;
+        width:250px;
+        height:100vh;
+        position: fixed;
+        top:0;
+        left: -250px;
+        background-color: white;
+        transition: left 0.3s ease;
+    
+    }
+    .menuappear{
+      left:0px
+    }
+    nav ul li a{
+        color:black;
+    }
+    nav .logo {
+        font-size: 30px;
+    }
+  #open-b{
+    display: inline-block;
+  }
+  nav .bt .signup{    text-decoration: none;
+    padding:8px 4px;
+    border-radius: 3px;
+    border:1px solid white;
+    transition:0.2s linear;
+    color: white;
+
+
+}
+
+}
