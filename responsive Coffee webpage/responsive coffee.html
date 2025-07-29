@@ -1,0 +1,57 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Development</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+</head>
+<body>
+  
+    <nav >
+        <a href="" class="logo">Damdam</a>
+        <ul>
+            <span id="close-b" class="material-symbols-outlined">close</span>
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact us</a></li>        
+
+        </ul>
+        <span id='open-b' class="material-symbols-outlined">menu</span>
+        <div class="bt">
+            <a class="login" href="">Login</a>
+            <a class="signup" href="">Signup</a>
+
+        </div>
+  </nav>
+        <div class="items">
+            <div class="text">
+                <h1>Mobile App Development</h1>
+                <p>Join us in the exciting world of programming and turn your ideas into reality. Unlock the world of endless possibilities - learn to code and shape the digital future with us.</p>
+                <div class="btns">
+                  <a class="join" href="">Join Us</a>
+                  <a class="learn" href="'">Learn More</a>
+                </div> 
+              </div>
+                      
+            <img alt="Image" src="https://i.ibb.co/7t1sd0C6/hero-bg.png">
+    <script>
+      const ul=document.querySelector('ul')
+      const openb=document.querySelector('#open-b')
+      const closeb=document.querySelector('#close-b')
+      function toggleTheClass(){
+        ul.classList.toggle('menuappear')
+      }
+      openb.addEventListener("click", toggleTheClass);
+
+      // Close mobile menu on close button click  
+      closeb.addEventListener("click", toggleTheClass);
+    </script>
+</body>
+</html>
