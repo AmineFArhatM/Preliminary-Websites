@@ -1,0 +1,7 @@
+you can not name an id or a class starting with an integer 
+    1box is not valid
+    box1 is valid
+
+a fixed container , once resized(the height increase significantly) can not be scrolled 
+==> scroll bar does not appear
+solution:in a media quesry , change its position to relative or absolute
