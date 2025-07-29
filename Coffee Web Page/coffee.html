@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>coffee</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
 </head>
 <body>
   <header>
     <div class="headercontainer">
-      <a class="logo" href="+">coffee<span>.</span></a>
+      <a class="logo" href="+">coffee<span>.</span></a>        
+      <span id="open-btn" class="material-symbols-outlined">menu</span>
       <ul>
+        <span id="close-btn" class="material-symbols-outlined">close</span>
+
         <li><a href='+'>Home</a></li>
         <li><a href='+'>products</a></li>
         <li><a href='+'>testimonial</a></li>
         <li><a href='+'>about us</a></li>
         <li><a href='+'>contact us</a></li>
+        <li><a href="+"><span></span></a></li>
       </ul>
     </div>
     </header>
@@ -28,6 +34,21 @@
 
     </div>
   </section>
+<script>
+   const header = document.querySelector("header");
+   const hamburgerBtn = document.querySelector("#open-btn");
+   const closeMenuBtn = document.querySelector("#close-btn");
+
+   function ToggleTheClass() {
+       header.classList.toggle("show");
+   }
+
+   // Toggle mobile menu on hamburger button click
+   hamburgerBtn.addEventListener("click", ToggleTheClass);
+
+   // Close mobile menu on close button click  
+   closeMenuBtn.addEventListener("click", ToggleTheClass);
+</script>
 
 </body>
 </html>
