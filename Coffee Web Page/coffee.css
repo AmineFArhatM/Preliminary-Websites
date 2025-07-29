@@ -39,18 +39,17 @@ header .headercontainer .logo span{
 }
 header .headercontainer ul{
     display: flex;
+    gap:35px;
 }
 ul li{
     list-style: none;
 }
-ul li:not(:first-child){
-    padding-left:40px
-}
+
 
 ul li a{
     text-decoration: none;
     color:white;
-    font-size:18px;
+    font-size:16px;
     transition:0.3s linear;
 }
 ul li a:hover{
@@ -107,9 +106,21 @@ section .container{
     transition: 0.3s linear;
 
 }
+#open-btn{
+    color: white;
+    display: none;
+    cursor:pointer
+}
+#close-btn{
+    position: absolute;
+    top:20px;
+    right:20px;
+    cursor:pointer;
+    display:none;
 
+}
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     section .container h1{
         font-size: 37px;
         text-align: center;
@@ -117,8 +128,27 @@ section .container{
     section .container p{
         text-align: center;
     }
-header .headercontainer .logo{
-    font-size: 32px;
-}
-.btn{text-align: center;}
-}
+    header .headercontainer .logo{
+        font-size: 32px;
+    }
+    .btn{text-align: center;}
+    header .headercontainer ul{
+        background-color:white;
+        color: black;
+        flex-direction: column;
+        padding: 70px 40px 0;
+        position: fixed;
+        left: -300px;
+        top:0;
+        width:300px;
+        height: 100vh;
+        transition: left 0.2s ease;
+
+    }
+    ul li a{color: black;} 
+    #open-btn , #close-btn{display: block;}
+    header.show ul{
+        left:0
+    }
+
+    }
