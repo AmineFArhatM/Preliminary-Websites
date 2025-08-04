@@ -1,0 +1,8 @@
+A cute light shadow:    box-shadow: 0 5px 20px rgba(0,0,0,0.4); (did not use spread)
+
+internal shadow :     box-shadow: inset  0 5px 20px (use inset) , that is good with button hover
+
+i dont have to set height and weight for buttons ans <a> , some padding like padding:8px 25px are convenient
+
+white-space: nowrap; mayarja3ch l star at any cost
+
